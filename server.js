@@ -9,12 +9,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/', function (req, res) {
+app.get('/pageone', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pageone.html'));
-});
-
-app.get('/pageone', function (req,res){
- res.send('a request to page one has been made..');
 });
 
 app.get('/wow',function(req,res){
