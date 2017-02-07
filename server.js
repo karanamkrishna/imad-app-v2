@@ -13,6 +13,11 @@ app.get('/pageone', function (req,res){
  res.send('a request to page one has been made..');
 });
 
+app.get('/wow',function(req,res){
+    res.send('wow this is the second different page');
+}
+);
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
